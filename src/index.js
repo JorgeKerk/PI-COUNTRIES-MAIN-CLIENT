@@ -7,6 +7,7 @@ import store from './redux/store/'
 import axios from 'axios'
 
 axios.defaults.baseURL = 'https://pi-countries-main-server-jakerk.up.railway.app'
+
 ReactDOM.render(
   <Provider store= { store }>
     <BrowserRouter>
