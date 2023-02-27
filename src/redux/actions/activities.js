@@ -17,7 +17,7 @@ const createActivity =  ( activity )=> {
 
     try {
 
-      const { data } = await axios.post( `http://localhost:3001/activities/`, activity )
+      const { data } = await axios.post( `/activities`, activity )
       return dispatch( { type: CREATE_ACTIVITY, payload: data } )
 
     } catch (error) {
@@ -43,7 +43,7 @@ const updateActivity = ( activity )=> {
 
     try {
 
-      const { data } = await axios.put( `http://localhost:3001/activities/`, activity )
+      const { data } = await axios.put( `/activities`, activity )
       return dispatch( { type: UPDATE_ACTIVITY, payload: data } )
 
     } catch (error) {
@@ -66,7 +66,7 @@ const deleteActivity = ( id )=> {
     
     try {
 
-      await axios.delete( `http://localhost:3001/activities/${ id }` )
+      await axios.delete( `/activities/${ id }` )
 
       return dispatch( { type: DELETE_ACTIVITY, payload: id }) 
 
@@ -87,7 +87,7 @@ const getAllActivities =  ()=> {
 
     try {
 
-      const { data } = await axios( 'http://localhost:3001/activities' )
+      const { data } = await axios( '/activities' )
       return dispatch( { type: GET_ALL_ACTIVITIES, payload: data } )
 
     } catch (error) {

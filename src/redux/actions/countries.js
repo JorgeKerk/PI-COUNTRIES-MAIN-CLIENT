@@ -13,7 +13,7 @@ const getAllCountries =  ()=> {
 
     try {
 
-      const { data } = await axios( 'http://localhost:3001/countries' )
+      const { data } = await axios( '/countries' )
       return dispatch( { type: GET_ALL_COUNTRIES, payload: data } )
 
     } catch (error) {
@@ -40,7 +40,7 @@ const getCountryByName =  ( name )=> {
 
       try {
 
-        const { data } = await axios( `http://localhost:3001/countries/?name=${ name }` )
+        const { data } = await axios( `/countries/?name=${ name }` )
         return dispatch( { type: GET_COUNTRIES_BY_NAME, payload: { name, data } } )
 
       } catch (error) {

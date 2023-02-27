@@ -16,7 +16,7 @@ const Detail = ()=> {
     // Gets the Country from the DB and stores it in the 'country' state variable
     const getDetail = async ()=>{
       try {
-        const { data } = await axios( `http://localhost:3001/countries/${ idCountry }` )
+        const { data } = await axios( `/countries/${ idCountry }` )
         setCountry( data )
       } catch (error) {
         dispatch( setError( error.message ))
