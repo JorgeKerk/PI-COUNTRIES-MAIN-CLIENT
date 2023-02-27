@@ -1,0 +1,39 @@
+.mainContainer {
+  background-color: rgba(224, 255, 255, 0.7);
+  width: 77.9vw;
+  height: 7vh;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin-top: 0.15rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagePagination, .pagePageSelected {
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  margin: 0.53rem;
+  padding: 0.39rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background-color: rgba(128, 128, 128, 0.7);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.pagePagination:hover{
+  text-shadow: 1px 1px 1px black;
+  transform: scale(1.2);
+  background-color: rgba(0, 255, 13, 0.733);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.pagePageSelected {
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(241, 238, 45, 0.801);
+  cursor: default;
+}

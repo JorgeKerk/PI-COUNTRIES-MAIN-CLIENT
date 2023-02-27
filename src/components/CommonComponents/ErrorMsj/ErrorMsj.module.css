@@ -1,0 +1,24 @@
+.mainCountries, .mainActivity {
+  color: rgb(182, 40, 40);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  background-color: rgba(238, 87, 87, 0.35);
+  border-radius: 1rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.mainCountries {
+  padding: 1rem;
+}
+
+.mainActivity {
+  padding: 0.3rem 0.5rem;
+}
+
+.mainCountries h1 {
+  font-size: 2rem;
+}
+
+.mainActivity h1 {
+  font-size: 1rem;
+}

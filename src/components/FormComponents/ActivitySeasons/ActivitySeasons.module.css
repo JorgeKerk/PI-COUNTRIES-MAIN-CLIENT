@@ -1,0 +1,19 @@
+.mainContiner {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mainContiner span {
+  font-weight: bold;
+}
+
+.mainContiner input {
+  margin-left: 0.5rem;
+}
+
+.error {
+  margin-left: 1rem;
+}

@@ -1,0 +1,13 @@
+/* Container of the whole Home */
+.mainContainer {
+  width: 95%;
+  display: flex;
+  padding: 0.2rem;
+}
+
+/* Within this container is the Country Container and the Pagination */
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

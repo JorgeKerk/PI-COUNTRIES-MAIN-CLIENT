@@ -1,0 +1,98 @@
+/* Container of the entire Activity Form */
+.mainContainer {
+  margin-top: 0.2rem;
+  height: 81.8vh;
+  width: 93vw;
+  border-radius: 1rem;
+  background-color: rgba(224, 255, 255, 0.7);
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.titleActivity {
+  font-size: 1.5rem;
+}
+
+/* Activity Form data container */
+.subContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.error {
+  color: rgb(182, 40, 40);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  background-color: rgba(238, 87, 87, 0.35);
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.button, .buttonDisabled {
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease-in;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 255, 13);
+  text-shadow: 1px 1px 1px black;
+}
+
+.componentActivity, .componentCountriesActivity{
+  margin: 0 1rem 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 224, 253, 0.6);
+  padding: 1rem;
+}
+
+.componentActivity{
+  justify-content: space-around;
+  width: 40rem;
+  height: 16.16%;
+}
+
+.componentCountriesActivity{
+  width: 50.5%;
+  height: 80%;
+}
+
+.crateActivity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.createButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 56%;
+}
+
+.activityCreated{
+  width: 44%;
+  display: flex;
+  padding-left: 2rem;
+  color: rgba(241, 238, 45, 0.8);
+  text-shadow: 1.5px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.activityCreated h1 {
+  font-size: 1.5rem;
+}

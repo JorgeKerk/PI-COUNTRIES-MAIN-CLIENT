@@ -1,0 +1,90 @@
+.mainContainer {
+  width: fit-content;
+  display: flex;
+  padding: 0 1rem;
+  gap: 0.5rem
+}
+
+.countries, .countriesError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 21.2rem;
+  height: 26rem;
+  border-radius: 1rem;
+  overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.countriesError {
+  justify-content: center;
+}
+
+.country {
+  height: 1rem;
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid black;
+  background-color: rgba(153, 255, 195, 0.5);
+  padding: 0.5rem;
+  text-align: left;
+  margin-top: 0.2rem;
+  transition: 0.3s ease-in;
+}
+
+.country:hover {
+  background-color: rgba(224, 255, 153, 0.5);
+  box-shadow: 0 0 1px black;
+  transform: scale(1.03);
+}
+
+.flag {
+  margin-right: 0.3rem;
+  width: 2rem;
+  height: 1rem;
+  object-fit:cover;
+  object-position: center center;
+  border-radius: 0.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.name {
+  width: fit-content;
+  height: fit-content;
+}
+
+.country div {
+  display: flex;
+  align-items: center;
+}
+
+.buttonSel, .buttonUnSel{
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  font-size: 16px;
+  width: 1rem;
+  height: 1rem;
+  background-color: rgb(189, 185, 185);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.buttonSel:hover, .buttonUnSel:hover {
+    box-shadow: 1px 1px 1.5px black;
+    background-color: rgb(223, 218, 218);
+    transform: scale(1.1);
+}
+
+.buttonSel:hover {
+    color: rgb(255, 0, 13);
+}
+
+.buttonUnSel:hover {
+    color: chartreuse;
+}

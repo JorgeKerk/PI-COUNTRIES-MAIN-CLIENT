@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subContainer input{
+  margin: 0;
+}
