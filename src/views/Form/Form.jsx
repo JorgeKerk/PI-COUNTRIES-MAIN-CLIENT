@@ -59,7 +59,7 @@ const Form = ( { action } )=> {
   useEffect( ()=>{
     if( action === 'Update' ){
       const selectedActivity = activities.find( activity => activity.name.toLowerCase() === countriesFilterSettings.activity.toLowerCase() )
-      console.log(selectedActivity);
+
       dispatch( setNewActivity( { prop: 'name', value: selectedActivity.name, error: '' } ) )
       dispatch( setNewActivity( { prop: 'dificulty', value: selectedActivity.dificulty, error: '' } ) )
       dispatch( setNewActivity( { prop: 'duration', value: selectedActivity.duration, error: '' } ) )

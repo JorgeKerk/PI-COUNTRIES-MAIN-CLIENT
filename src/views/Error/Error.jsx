@@ -8,7 +8,7 @@ const Error = ()=> {
       <div className= { styles.errorContainer } >
         <ErrorMsj error= '404 Page not found' />
         <NavLink to= '/home' >
-        <button className= { styles.button} >Back to Home Page</button>
+        <button className= { styles.button } >Back to Home Page</button>
         </NavLink>
       </div>
     </div>

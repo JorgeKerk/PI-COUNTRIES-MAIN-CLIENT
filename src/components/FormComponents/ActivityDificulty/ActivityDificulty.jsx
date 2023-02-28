@@ -13,6 +13,7 @@ const ActivityDificulty = ( { action } )=> {
     const valueSelect = parseInt(event.target.value)
     dispatch( setNewActivity( { prop: 'dificulty', value: valueSelect, error: '' } ) )
   }
+  
   return(
     <div className= { styles.mainContiner } onChange= { handleChange }>
       <span>Dificulty </span>
