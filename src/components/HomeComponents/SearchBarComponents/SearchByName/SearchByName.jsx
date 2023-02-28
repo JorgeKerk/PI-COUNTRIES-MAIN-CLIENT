@@ -1,9 +1,10 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import styles from './SearchByName.module.css';
 import { getCountryByName } from '../../../../redux/actions';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const SearchByName = ()=> {
+  const { name } = useSelector( state => state.countriesFilterSettings )
   const dispatch = useDispatch()
   const [ countryName, setCountryName ] = useState( '' )
   const [ countrySearched, setCountrySearched ] = useState( '' )
@@ -25,6 +26,11 @@ const SearchByName = ()=> {
     setCountrySearched( '' )
     dispatch( getCountryByName( '' ) )
   }
+
+  useEffect( ()=> {
+    setCountrySearched( name )
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return(
     <>
