@@ -12,10 +12,13 @@ const CountriesActivity = ( { action } )=> {
   const [ selCountries, setSelCountries ] = useState( [] )
 
   useEffect( ()=>{
+    const allCountriesSorted = allCountries.sort( ( countryA, countryB ) => countryA.name > countryB.name ? 1 : -1 )
+ 
     if( action === 'Update' ){
-      const countriesSel = allCountries.map( country => ( { ...country, selected: countriesIds.includes( country.id ) } ) )
+      const countriesSel = allCountriesSorted.map( country => ( { ...country, selected: countriesIds.includes( country.id ) } ) )
       setSelCountries( countriesSel )
-    } else { setSelCountries( allCountries ) }
+    } else { setSelCountries( allCountriesSorted ) }
+    
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ action, allCountries, action === 'Update' ? countriesIds : null ] ) 
 

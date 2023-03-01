@@ -94,8 +94,8 @@ const rootReducer = ( state = initialState, { type, payload } )=> {
     // Save the 'name' filter of the object 'CountriesfilTersettings' in the State
     case GET_COUNTRIES_BY_NAME:{
       let newState = { ...state }
-      newState.countriesFilter = payload.name? payload.data : newState.allCountries
-      newState = applyFiltersInCountries( '', newState, '' )
+      
+      newState = applyFiltersInCountries( 'name', newState, payload.name )
 
       return {
         ...state,
