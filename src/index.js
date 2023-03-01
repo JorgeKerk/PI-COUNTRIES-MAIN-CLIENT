@@ -8,10 +8,10 @@ import axios from 'axios'
 
 
 // LOCAL CONNECTION
-axios.defaults.baseURL = 'http://localhost:3001/'
+// axios.defaults.baseURL = 'http://localhost:3001/'
 
 // DEPLOYED CONNECTION
-// axios.defaults.baseURL = 'https://pi-countries-main-server-jakerk.up.railway.app/'
+axios.defaults.baseURL = 'https://pi-countries-main-server-jakerk.up.railway.app/'
 
 ReactDOM.render(
   <Provider store= { store }>
