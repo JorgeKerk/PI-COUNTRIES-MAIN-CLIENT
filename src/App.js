@@ -9,10 +9,9 @@ function App() {
                 || pathLocation.startsWith( '/detail/') 
                 || pathLocation === '/createActivity'
                 || pathLocation === '/updateActivity'
-                // || pathLocation === '/deleteActivity'
 
   return (
-    <>
+    <div className='App'>
       <Background>
        {location &&  <NavBar />}
         <Route exact path='/' render= { ()=> <Landing /> } />
@@ -26,7 +25,7 @@ function App() {
           <Route path= '*' render= { ()=> <Error />} /> 
         }
       </Background>
-    </>
+    </div>
   )
 }
 

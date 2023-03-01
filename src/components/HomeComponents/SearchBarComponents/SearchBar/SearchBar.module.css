@@ -13,3 +13,9 @@
 .hrFinal {
   margin-bottom: 0.7rem; 
 }
+
+@media ( max-width: 799px ){
+  .mainContainer {
+    width:500px;
+  } 
+}

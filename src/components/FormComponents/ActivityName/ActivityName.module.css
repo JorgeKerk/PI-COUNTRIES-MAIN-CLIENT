@@ -27,3 +27,10 @@
   margin-top: 0.5rem;
   height: 2rem;
 }
+
+@media ( max-width: 620px ){
+  .activityName {
+    height: fit-content;
+    flex-direction: column;
+  }
+}

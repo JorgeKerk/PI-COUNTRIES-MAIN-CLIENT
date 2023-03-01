@@ -44,3 +44,15 @@
 .buttonNo:hover {
   background-color: rgba(0, 255, 13, 0.5);
 }
+
+@media ( max-width: 780px ){
+  .mainContainer {
+    width: 90vw;
+  } 
+}
+
+@media ( max-width: 580px ){
+  .mainContainer {
+    width: 88vw;
+  } 
+}

@@ -123,9 +123,7 @@ const Form = ( { action } )=> {
               </div>
             </div>
             <div className= { styles.componentCountriesActivity } >
-              <div>
                 <CountriesActivity action= { action } />
-              </div>
             </div>
           </div>
           <div className= { styles.crateActivity }>

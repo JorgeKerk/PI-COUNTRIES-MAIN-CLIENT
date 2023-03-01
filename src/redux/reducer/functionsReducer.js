@@ -20,11 +20,11 @@ const applyOrderCountries = ( order, countries )=>{
 }
 
 // Apply the filters and orders corresponding to the Countries according to the 'countriesFilterSettings' object of the redux
-const applyFilterAndOrderCountries = ( filterByName, { name, continents, activity, order }, activities, countries )=>{
+const applyFilterAndOrderCountries = ( { name, continents, activity, order }, activities, countries )=>{
   
   let countriesFiltered = countries
 
-  if( filterByName ){
+  if( name ){
     countriesFiltered = countriesFiltered.filter( country => country.name.toLowerCase().includes( name.toLowerCase() ) )
   }
 
@@ -60,7 +60,6 @@ const applyFiltersInCountries = ( newfilter, state, payload )=> {
   const countriesToFilter = newfilter? state.allCountries : state.countriesFilter
 
   const countriesFilteredAndOrdened =applyFilterAndOrderCountries( 
-    !!newfilter,
     newCountriesFilterSettings, 
     state.activities, 
     countriesToFilter

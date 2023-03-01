@@ -88,3 +88,24 @@
 .buttonUnSel:hover {
     color: chartreuse;
 }
+
+@media ( max-width: 1305px ){
+  .mainContainer {
+    width: 90%;
+    padding-right: 1rem;
+    flex-direction: column;
+    align-items: center;
+  } 
+}
+
+@media ( max-width: 620px ){
+  .countries, .countriesError {
+    width: 18.2rem;
+  }
+  .country {
+    width: 15rem;
+  }
+  .name {
+    font-size: 0.7rem;
+  }
+}

@@ -13,3 +13,12 @@
 .subContainer input{
   margin: 0;
 }
+
+@media ( max-width: 1287px ){
+  .container {
+    flex-direction: column;
+  } 
+  .subContainer {
+    margin-bottom: 1rem;
+  }
+}

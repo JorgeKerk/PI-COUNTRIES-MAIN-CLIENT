@@ -46,3 +46,45 @@
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
+
+@media ( max-width: 974px ){
+  .searchContainer {
+    width: 15vw;
+  } 
+}
+
+@media ( max-width: 868px ){
+  .searchContainer {
+    width: 18vw;
+  } 
+}
+
+@media ( max-width: 757px ){
+  .searchContainer {
+    width: 20vw;
+  } 
+}
+
+@media ( max-width: 667px ){
+  .searchContainer {
+    width: 22vw;
+  } 
+}
+
+@media ( max-width: 595px ){
+  .searchContainer {
+    width: 25vw;
+  } 
+}
+
+@media ( max-width: 533px ){
+  .searchContainer {
+    width: 29vw;
+  } 
+}
+
+@media ( max-width: 461px ){
+  .searchContainer {
+    width: 36vw;
+  } 
+}

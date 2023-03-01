@@ -1,6 +1,7 @@
 .mainContainer {
   width: 77vw;
-  height: 71.7vh;
+  min-height: 83%;
+  height: fit-content;
   display: flex;
   border: 1px solid black;
   border-radius: 1rem;
@@ -26,4 +27,100 @@
 .subContainerError {
   align-items: center;
   justify-content: center;
+}
+
+@media ( max-width: 1365px ){
+  .mainContainer {
+    width: 76.7vw;
+  } 
+}
+
+@media ( max-width: 1089px ){
+  .mainContainer {
+    width: 75.8vw;
+  } 
+}
+
+@media ( max-width: 1030px ){
+  .mainContainer {
+    width: 74.5vw;
+  } 
+}
+
+@media ( max-width: 974px ){
+  .mainContainer {
+    width: 73vw;
+  } 
+}
+
+@media ( max-width: 911px ){
+  .mainContainer {
+    width: 72vw;
+  } 
+}
+
+@media ( max-width: 868px ){
+  .mainContainer {
+    width: 70vw;
+  } 
+}
+
+@media ( max-width: 805px ){
+  .mainContainer {
+    width: 68.5vw;
+  } 
+}
+
+@media ( max-width: 757px ){
+  .mainContainer {
+    width: 66.5vw;
+  } 
+}
+
+@media ( max-width: 705px ){
+  .mainContainer {
+    width: 65vw;
+  } 
+}
+
+@media ( max-width: 667px ){
+  .mainContainer {
+    width: 63vw;
+  } 
+}
+
+@media ( max-width: 636px ){
+  .mainContainer {
+    width: 61vw;
+  } 
+}
+
+@media ( max-width: 595px ){
+  .mainContainer {
+    width: 59vw;
+  } 
+}
+
+@media ( max-width: 565px ){
+  .mainContainer {
+    width: 57vw;
+  } 
+}
+
+@media ( max-width: 533px ){
+  .mainContainer {
+    width: 54vw;
+  } 
+}
+
+@media ( max-width: 497px ){
+  .mainContainer {
+    width: 51vw;
+  } 
+}
+
+@media ( max-width: 461px ){
+  .mainContainer {
+    width: 45vw;
+  } 
 }

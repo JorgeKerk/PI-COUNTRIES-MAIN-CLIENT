@@ -60,11 +60,11 @@ const CountriesActivity = ( { action } )=> {
 
   return(
     <div className= { styles.mainContainer } >
-      <div>
+      <div className= { styles.subContainer } >
         <h1>Countries with this activity</h1>
         { selCountries.length && displayCountries( true ) }
       </div>
-      <div>
+      <div className= { styles.subContainer } >
         <h1>Available countries</h1>
         { selCountries.length && displayCountries( false ) }
       </div>

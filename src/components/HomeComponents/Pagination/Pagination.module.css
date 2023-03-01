@@ -1,7 +1,6 @@
 .mainContainer {
   background-color: rgba(224, 255, 255, 0.7);
   width: 77.9vw;
-  height: 7vh;
   border: 1px solid black;
   border-radius: 1rem;
   margin-top: 0.15rem;
@@ -36,4 +35,70 @@
   text-shadow: 1px 1px 1px black;
   background-color: rgba(241, 238, 45, 0.801);
   cursor: default;
+}
+
+@media ( max-width: 1030px ){
+  .mainContainer {
+    width: 76vw;
+  }
+}
+
+@media ( max-width: 974px ){
+  .mainContainer {
+    width: 74.4vw;
+  } 
+}
+
+@media ( max-width: 868px ){
+  .mainContainer {
+    width: 71.5vw;
+  } 
+}
+
+@media ( max-width: 805px ){
+  .mainContainer {
+    width: 70.5vw;
+  } 
+}
+
+@media ( max-width: 757px ){
+  .mainContainer {
+    width: 68.4vw;
+  } 
+}
+
+@media ( max-width: 667px ){
+  .mainContainer {
+    width: 65.3vw;
+  } 
+}
+
+@media ( max-width: 636px ){
+  .mainContainer {
+    width: 63.2vw;
+  } 
+}
+
+@media ( max-width: 595px ){
+  .mainContainer {
+    width: 61.35vw;
+  } 
+}
+
+@media ( max-width: 533px ){
+  .mainContainer {
+    width: 57vw;
+  } 
+}
+
+@media ( max-width: 497px ){
+  .mainContainer {
+    width: 53.9vw;
+  } 
+}
+
+@media ( max-width: 461px ){
+  .mainContainer {
+    width: 48vw;
+  } 
 }
